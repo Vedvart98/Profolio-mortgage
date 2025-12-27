@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Button from '../common/Button'
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
@@ -51,7 +52,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 px-10 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 px-10 transition-all duration-3000 ${
         isScrolled ? 'bg-primary shadow-lg py-3' : 'bg-primary/95 py-4'
       }`}
     >
@@ -107,7 +108,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={()=>navigate('/get-started')}>
               Get Started
             </Button>
           </div>
@@ -166,7 +167,7 @@ const Header = () => {
               </div>
             ))}
             <div className="px-4 mt-4">
-              <Button variant="outline" size="sm" className="w-full">
+              <Button variant="outline" size="sm" className="w-full" onClick={()=>{navigate('/get-started');setIsMobileMenuOpen(false)}}>
                 Get Started
               </Button>
             </div>

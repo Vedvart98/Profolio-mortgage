@@ -16,11 +16,11 @@ const AboutSection = () => {
         <div>
           <Section.Header
             subtitle="About Us"
-            title="Profolio Mortgage Group"
+            title="Profolio Mortgage"
           />
           <div className="space-y-4 text-gray-600">
             <p>
-              We understand that buying a home and going through the process of getting a mortgage can be a big step. But IMG is here to make the loan process easier and bring clarity to what can be a daunting process.
+              We understand that buying a home and going through the process of getting a mortgage can be a big step. But Profolio Mortgage is here to make the loan process easier and bring clarity to what can be a daunting process.
             </p>
             <p>
               So, give us a call if you are in need of a mortgage to purchase or refinance your home – from your first interaction with us, we want you to see what sets us apart, and together we can help find a clear path forward to your mortgage solution.

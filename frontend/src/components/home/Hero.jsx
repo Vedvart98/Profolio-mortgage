@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from '../common/Button'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative px-10 bg-center bg-no-repeat h-[80vh] min-h-[50vh]" style={{backgroundImage:"url('/images/hero.jpeg')", backgroundPosition:'center', backgroundSize:'100% 110%'}}>
       <div className="absolute inset-0 bg-black/20"></div>
@@ -14,10 +16,10 @@ const Hero = () => {
             For Every Special Moment
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={()=>navigate('/find-loan-officer')}>
               Find a Loan Expert
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => navigate('/calculators')}>
               Calculate My Payments
             </Button>
           </div>

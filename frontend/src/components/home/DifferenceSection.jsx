@@ -13,14 +13,14 @@ const DifferenceSection = () => {
           />
           <div className="space-y-4 text-gray-600 mb-8">
             <p>
-              PMG's philosophy is based on a strong and genuine belief in the "customer for life" principal of doing business. This philosophy fuels IMG's employees and helps to create strong relationships with both its customers and local real estate professionals.
+              Profolio Mortgage's philosophy is based on a strong and genuine belief in the "customer for life" principal of doing business. This philosophy fuels IMG's employees and helps to create strong relationships with both its customers and local real estate professionals.
             </p>
             <p>
-              The primary goal of IMG is to make the loan process as fast, simple, accurate, and affordable as possible for its customers.
+              The primary goal of Profolio Mortgage is to make the loan process as fast, simple, accurate, and affordable as possible for its customers.
             </p>
           </div>
           <Button variant="primary" size="lg">
-            More about PMG
+            More about Us
           </Button>
         </div>
         <div className="order-1 md:order-2">

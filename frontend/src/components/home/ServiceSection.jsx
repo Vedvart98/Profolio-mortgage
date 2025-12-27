@@ -1,28 +1,33 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Section from '../common/Section'
 import Card from '../common/Card'
 import Button from '../common/Button'
 import { Users, Zap, FileCheck } from 'lucide-react'
 
 const ServiceSection = () => {
+  const navigate = useNavigate();
   const services = [
     {
       icon: Users,
       title: 'Home Loan Experts',
-      description: 'Profolio Mortgage Group has branches across the United States. Quickly get assistance with all of your mortgage needs.',
+      description: 'Profolio Mortgage has branches across the United States. Quickly get assistance with all of your mortgage needs.',
       cta: 'Find a Loan Officer',
+      link:'/find-loan-officer'
     },
     {
       icon: Zap,
       title: 'Fast Approvals',
       description: "We understand the need to have a quick response to your requests; it's our goal to be proactive in getting you through this process as quickly as possible.",
       cta: 'Apply Now',
+      link: '/get-started'
     },
     {
       icon: FileCheck,
       title: 'Simple Process',
       description: 'With advanced processing software and automated underwriting systems we have taken the mystery out of approving and closing a home loan.',
       cta: 'Loan Process',
+      link: '/get-started'
     },
   ]
 
@@ -49,7 +54,7 @@ const ServiceSection = () => {
                 <Card.Description className="mb-6">
                   {service.description}
                 </Card.Description>
-                <Button variant="secondary" size="sm" className="mt-auto">
+                <Button variant="secondary" size="sm" className="mt-auto" onClick={()=>navigate(service.link)}>
                   {service.cta}
                 </Button>
               </Card.Content>
