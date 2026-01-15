@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">
-              Profoilio Mortgage Group
+              Profoilio Mortgage
             </h3>
             <p className="text-gray-300 mb-6">
               Making the loan process as fast, simple, accurate, and affordable as possible for our customers.
@@ -39,14 +39,20 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
-                  <p>DPA,sec-9, Dwarka </p>
-                  <p>New Delhi 110077</p>
+                  <p>780 , Star Meadow Dr Prosper</p>
+                  <p>TX 75078</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
                 <a href="tel:9876658700" className="hover:text-gray-300">
-                  9876658700
+                  +1 (713) 931-0310
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 flex-shrink-0"/>
+                <a href="mailto:rishi4mortgage@gmail.com" className="hover:text-gray-300">
+                  rishi4mortgage@gmail.com
                 </a>
               </div>
             </div>
@@ -77,7 +83,7 @@ const Footer = () => {
       <div className="border-t border-gray-700">
         <div className="container-custom py-6">
           <p className="text-center text-sm text-gray-400">
-            Copyright ©{new Date().getFullYear()} | Profolio Mortgage Group
+            Copyright ©{new Date().getFullYear()} | Profolio Mortgage
           </p>
         </div>
       </div>

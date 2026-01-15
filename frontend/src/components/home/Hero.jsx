@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <section className="relative px-10 bg-center bg-no-repeat h-[80vh] min-h-[50vh]" style={{backgroundImage:"url('/images/hero.jpeg')", backgroundPosition:'center', backgroundSize:'100% 110%'}}>
+    <section className="relative bg-center bg-no-repeat h-[80vh] min-h-[50vh]" style={{backgroundImage:"url('/images/hero.jpeg')", backgroundPosition:'contain', backgroundSize:'100% 140%'}}>
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative text-white container-custom h-full z-10 flex items-center justify-end">
         <div className="max-w-4xl">

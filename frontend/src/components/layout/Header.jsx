@@ -49,28 +49,21 @@ const Header = () => {
       ],
     },
   ]
-
+// fixed top-50 left-0 right-0 z-50 px-10 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 px-10 transition-all duration-3000 ${
-        isScrolled ? 'bg-primary shadow-lg py-3' : 'bg-primary/95 py-4'
+      className={`transition-all duration-300 ${
+        isScrolled ? 'bg-primary shadow-lg py-3 px-2 fixed top-0 left-0 right-0 z-50' : 'relative bg-transparent py-4 px-2'
       }`}
     >
-      <nav className="container-custom">
+      <nav className="container-custom  overflow-visible">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <div className="text-white font-bold text-xl md:text-2xl">
-              <img src="/images/logo.png" alt="" width={200} height={200}/>
-            </div>
-          </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
             {navigation.map((item) => (
               <div
                 key={item.name}
-                className="relative text-black hover:text-gray-700"
+                className="relative text-black left-100 hover:text-gray-700"
                 onMouseEnter={() => item.dropdown && setOpenDropdown(item.name)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
@@ -81,7 +74,7 @@ const Header = () => {
                       <ChevronDown className="w-4 h-4" />
                     </button>
                     {openDropdown === item.name && (
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg py-2">
+                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-md shadow-lg py-2 z-60">
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
