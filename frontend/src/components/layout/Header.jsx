@@ -49,21 +49,20 @@ const Header = () => {
       ],
     },
   ]
-// fixed top-50 left-0 right-0 z-50 px-10 
   return (
     <header
       className={`transition-all duration-300 ${
         isScrolled ? 'bg-primary shadow-lg py-3 px-2 fixed top-0 left-0 right-0 z-50' : 'relative bg-transparent py-4 px-2'
       }`}
     >
-      <nav className="container-custom  overflow-visible">
+      <nav className="container-custom overflow-visible">
         <div className="flex items-center justify-between">
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center">
             {navigation.map((item) => (
               <div
                 key={item.name}
-                className="relative text-black left-100 hover:text-gray-700"
+                className="relative text-black hover:text-gray-700"
                 onMouseEnter={() => item.dropdown && setOpenDropdown(item.name)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
@@ -109,7 +108,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-black p-2"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -141,7 +140,7 @@ const Header = () => {
                           <Link
                             key={subItem.name}
                             to={subItem.href}
-                            className="block px-4 py-2 text-white/90 hover:text-gray text-sm"
+                            className="block px-4 py-2 text-black/90 hover:text-gray text-sm"
                           >
                             {subItem.name}
                           </Link>
@@ -152,7 +151,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.href}
-                    className="block px-4 py-2 text-white hover:text-gray-200"
+                    className="block px-4 py-2 text-black hover:text-gray-200"
                   >
                     {item.name}
                   </Link>

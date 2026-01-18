@@ -151,7 +151,7 @@ const FindLoanOfficer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredOfficers.map(officer => (
             <Card key={officer.id} hover>
-              <div className="h-70 overflow-hidden">
+              <div className="h-[30vh] w-[30vw] overflow-hidden mx-5">
                 <img
                   src={officer.image}
                   alt={officer.name}
