@@ -39,13 +39,13 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
-                  <p>780 , Star Meadow Dr Prosper</p>
-                  <p>TX 75078</p>
+                  <p>780 Star Meadow Dr</p>
+                  <p>Prosper TX 75078</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <a href="tel:9876658700" className="hover:text-gray-300">
+                <a href="tel:7139310310" className="hover:text-gray-300">
                   +1 (713) 931-0310
                 </a>
               </div>

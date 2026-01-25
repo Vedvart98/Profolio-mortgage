@@ -17,7 +17,7 @@ const FindLoanOfficer = () => {
       name: 'Bhupender Rishi Singh',
       title: 'Senior Loan Officer',
       nmls: '1769041',
-      location: '780 , Star Meadow Dr Prosper TX 75078',
+      location: '780 Star Meadow Dr, Prosper TX 75078',
       state: 'TX',
       phone: '+1 (713) 931-0310',
       email: 'rishi4mortgage@gmail.com',
